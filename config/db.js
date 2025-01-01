@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-require.env
 
-mongoose.connect(process.env.DB_URI).then(()=>{
+
+mongoose.connect("mongodb://localhost:27017/").then(()=>{
     console.log("DB Connected");
 }).catch((error)=>{
     console.log("DB not Connected");
